@@ -1,4 +1,4 @@
-# How to avoid DPI in linux - обход блокиоровкм сайтов DPI
+# How to avoid DPI in linux - обход блокировки сайтов DPI
 
 https://youtu.be/FdDC9R7gL-Y?si=-dwbfxy0jqb_NMIg 
 
@@ -101,6 +101,21 @@ sudo systemctl start systemd-resolved.service
 ключ
 ```bash
 --dpi-desync=fake,split2 --dpi-desync-ttl=3 
-
-
 ```
+
+спрашивают - хотим ли мы изменить параметры? - да, хотим
+
+открыывается nano 
+- удаляем все что находится внутри кавычек в первой строчке 
+- изстратегии которую мы выбрали, копируем ключи. вставляем в кавычки, сохраняем и выходим 
+
+
+- далее выбираем интерфейс - можно согласиться с any 
+
+- http - поддержка нужна 
+- http keepalive - выключить 
+- https - нужна
+- quick support - не нужен
+- фильтрация - по умолчанию никакая - none 
+
+- **перезапускам браузер**
